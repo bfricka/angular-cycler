@@ -1,0 +1,27 @@
+{
+  "name": "ngCycler",
+  "description": "",
+  "version": "0.0.2",
+  "private": true,
+  "author": "Brian Frichette",
+  "homepage": "",
+  "contributors": [ "Brian Frichette <brian.frichette@gmail.com> (https://github.com/brian-frichette)" ],
+  "bugs": { "url": "https://github.com/brian-frichette/angular-cycler/issues" },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "0.4.x",
+    "karma": ">=0.8",
+    "connect": ">=2.7",
+    "grunt-contrib-uglify": ">=0.2",
+    "grunt-contrib-watch": ">=0.4",
+    "grunt-contrib-jshint": ">=0.6",
+    "grunt-contrib-copy": ">=0.4",
+    "grunt-contrib-less": ">=0.6"
+  },
+  "keywords": [],
+  "repository": "git://github.com/brian-frichette/angular-cycler.git",
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  }]
+}
