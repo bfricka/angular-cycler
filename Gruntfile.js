@@ -58,7 +58,8 @@ module.exports = function(grunt) {
     , uglify: {
       app: {
         options: {
-          compress: {
+          report: 'gzip'
+          , compress: {
               loops        : true
             , unused       : true
             , unsafe       : true
