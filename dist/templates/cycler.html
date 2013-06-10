@@ -1,0 +1,41 @@
+<script type="text/ng-template" id="cycler.html">
+  <section
+    ng-mouseenter="pause()"
+    ng-mouseleave="play()"
+    ng-class="{ 'cycler-x-large': size == 'xl',
+      'cycler-large': size == 'l',
+      'cycler-medium': size == 'm',
+      'cycler-small': size == 's' }"
+    direction="direction"
+    class="cycler">
+
+    <ol ng-if="indicators && slides().length > 1" class="cycler-indicators">
+      <li
+        ng-repeat="slide in slides()"
+        ng-class="{ active: isActive(slide) }"
+        ng-click="select(slide)"></li>
+    </ol>
+    <article
+      ng-transclude="ng-transclude"
+      ng-click="togglePlay()"
+      class="cycler-inner"></article>
+    <div ng-if="controls == true" class="cycler-controls">
+      <div class="cycler-control-wrap left">
+        <a
+          ng-click="prev()"
+          ng-show="slides().length > 1"
+          class="cycler-control">
+          <i class="icon-chevron-left"></i>
+        </a>
+      </div>
+      <div class="cycler-control-wrap right">
+        <a
+          ng-click="next()"
+          ng-show="slides().length > 1"
+          class="cycler-control">
+          <i class="icon-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+</script>
